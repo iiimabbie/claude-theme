@@ -41,7 +41,7 @@
 1. 首先安裝 [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) 瀏覽器擴充功能
 2. 點擊下方安裝按鈕：
 
-    [![安裝主題](https://img.shields.io/badge/%E5%AE%89%E8%A3%9D%E4%B8%BB%E9%A1%8C-pink?style=for-the-badge)](https://github.com/iiimabbie/claude-pink-theme/claude-pink-theme.user.css)
+    [![安裝主題](https://img.shields.io/badge/%E5%AE%89%E8%A3%9D%E4%B8%BB%E9%A1%8C-pink?style=for-the-badge)](https://github.com/iiimabbie/claude-pink-theme/raw/main/claude-pink-theme.user.css)
     
     這是騙人的按鈕，裝不了，但是粉粉的我很喜歡，所以留著。請直接看下面的方法自行複製貼上吧XD。
 
