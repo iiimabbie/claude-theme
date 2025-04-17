@@ -1,0 +1,183 @@
+/* ==UserStyle==
+@name           粉紅Noc主題 - Claude AI 少女心風格
+@namespace      github.com/iiimabbie
+@version        1.0.0
+@description    將Claude AI變成可愛的粉紅色系少女風格
+@author         iiimabbie
+@homepageURL    https://github.com/iiimabbie/claude-pink-theme
+@supportURL     https://github.com/iiimabbie/claude-pink-theme/issues
+@license        MIT
+==/UserStyle== */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=New+Tegomin&display=swap');
+
+/* 基本背景與文字 */
+html[theme="claude"][data-mode="dark"] {
+    background-color: #333 !important;
+    color: pink !important;
+}
+
+/* 背景顏色 */
+.bg-bg-100,
+.h-screen {
+    background-color: #333 !important;
+}
+
+/* 字型顏色 */
+.text-text-100,
+.text-text-200,
+.text-text-300,
+.text-text-400,
+.text-text-500,
+.whitespace-pre-wrap,
+.tracking-tight,
+.transition-all {
+    color: #e1cbcf !important;
+    font-family: "New Tegomin", serif;
+}
+
+/* 左側欄上方NewChat樣式 */
+.bg-accent-main-000 {
+    background-color: pink;
+}
+.text-always-white {
+    color: #333 !important;
+}
+.hover\:\!bg-accent-main-000\/\[0\.08\]:hover{
+    background-color: #ffc0cb4f !important;
+}
+
+
+/* 去除左欄漸層黑塊 */
+.from-bg-200 {
+    --tw-gradient-stops: none;
+}
+
+/* 左側欄選定聊天之背景 */
+.\!bg-bg-400 {
+    background-color: #ffc0cb4f !important;
+}
+.hover\:bg-bg-400:hover{
+    background-color: #ffc0cb4f !important;
+}
+
+/* 右下免責小字 */
+.inline-block{
+    margin-top: 10px;
+}
+
+.from-bg-100{
+  --tw-gradient-stops:none;
+}
+
+/* .max-w-3xl {
+    max-width: 200ch;
+}
+
+.max-w-\[75ch\] {
+    max-width: 200ch;
+} */
+.place-self-end {
+    background-color: pink !important;
+}
+
+/* 按鈕 */
+.btn,
+button {
+    background-color: rgba(255, 192, 203, 0) !important;
+    color: #ffc0cb !important;
+/*     border: 1px solid rgba(255, 192, 203, 0.3) !important; */
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    margin-left: 3px;
+}
+
+.btn:hover,
+button:hover {
+    background-color: rgba(255, 192, 203, 0.3) !important;
+    transform: scale(1.02) !important;
+}
+
+/* 列表項 */
+li,
+ol,
+hr,
+ul{
+    color: #c5b88f !important;
+    font-family: "New Tegomin", serif;
+}
+
+
+/* 少女心小裝飾 */
+.flex.h-screen.w-full:before {
+    content: "🌸";
+    position: fixed;
+    top: 790px;
+    right: 430px;
+    font-size: 30px;
+    opacity: 0.7;
+    z-index: 1000;
+    animation: float 3s ease-in-out infinite;
+}
+
+.flex.h-screen.w-full:after {
+    content: "🧸";
+    position: fixed;
+    bottom: 20px;
+    left: 700px;
+    font-size: 30px;
+    opacity: 0.7;
+    z-index: 1000;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* 頂部區域裝飾, 別的頁面也會像鬼魂一樣跑出來 */
+/* header:before {
+    content: "🦄";
+    position: fixed;
+    top: 60px;
+    left: 35%;
+    font-size: 22px;
+    opacity: 0.5;
+    z-index: 1000;
+    animation: float 7s ease-in-out infinite 1.5s;
+}
+
+header:after {
+    content: "🍭";
+    position: fixed;
+    top: 300px;
+    left: 80%;
+    font-size: 35px;
+    opacity: 0.6;
+    z-index: 1000;
+    animation: float 4.5s ease-in-out infinite 2s;
+} */
+
+/* 動畫 */
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.6;
+    }
+
+    25% {
+        transform: translateY(-10px) translateX(5px) rotate(5deg);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(0) translateX(-5px) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: translateY(10px) translateX(5px) rotate(-5deg);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.6;
+    }
+}
