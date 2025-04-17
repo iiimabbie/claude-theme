@@ -1,7 +1,7 @@
 # 🌸 粉紅 Noc 主題 - Claude AI 少女心風格 🌸
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-pink.svg)
-![Version](https://img.shields.io/badge/version-1.1.0-ff69b4)
+![Version](https://img.shields.io/badge/version-1.2.0-ff69b4)
 ![Stylus](https://img.shields.io/badge/stylus-%E2%9C%93-pink.svg)
 ![Mode](https://img.shields.io/badge/mode-Dark%20Only-black)
 
@@ -132,5 +132,6 @@ MIT © [iiimabbie](https://github.com/iiimabbie)
 ---
 
 <p>2025.04.17 version 1.1.0</P>
+<p>2025.04.17 version 1.2.0 - 改成變數提取各種顏色</P>
 
 > Made By iiimabbie 

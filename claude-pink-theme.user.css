@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           粉紅Noc主題 - Claude AI 少女心風格
 @namespace      github.com/iiimabbie
-@version        1.1.0
+@version        1.2.0
 @description    將Claude AI變成可愛的粉紅色系少女風格
 @author         iiimabbie
 @homepageURL    https://github.com/iiimabbie/claude-pink-theme
@@ -13,45 +13,68 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&family=New+Tegomin&display=swap');
 
 @-moz-document domain("claude.ai") {
-    * {
-        outline-color: #ffc0cb;
+
+    /* 基本色彩變數 */
+    :root {
+        --bg-color: #333;
+        --text-color: #e1cbcf;
+        --pink-accent: #ffc0cb;
+        --pink-accent-transparent: #ffc0cb3d;
+        --pink-accent-hover: #ffc0cb4f;
+
+        /* 強調色變數 */
+        --strong-color: #ebcb8b;
+        --em-color: #88c0d0;
+
+        /* 標題色彩變數 */
+        --h1-color: #bf616a;
+        --h2-color: #a3be8c;
+        --h3-color: #b48ead;
+        --h4-color: #b48ead;
+        --h5-color: #8fbcbb;
+        --h6-color: #ebcb8b;
+
+        /* 列表色彩 */
+        --list-color: #c5b88f;
+
+        /* 字體變數 */
+        --main-font: "New Tegomin", serif;
+        --code-font: "IBM Plex Mono", monospace;
     }
 
-    /* 基本背景與文字 */
-    html[theme="claude"][data-mode="dark"] {
-        background-color: #333 !important;
-        color: pink !important;
+    * {
+        outline-color: var(--pink-accent);
     }
 
     /* 背景顏色 */
     .bg-bg-100,
     .h-screen {
-        background-color: #333 !important;
+        background-color: var(--bg-color) !important;
     }
 
     .bg-bg-300 {
-        background-color: #ffc0cb3d !important;
+        background-color: var(--pink-accent-transparent) !important;
     }
 
-    /* 字型 */
+    /* 字型設定 */
     .text-text-200,
     .text-text-300,
     .text-text-400,
     .text-text-500,
     .tracking-tight,
     .transition-all {
-        color: #e1cbcf !important;
-        font-family: "New Tegomin", serif;
+        color: var(--text-color) !important;
+        font-family: var(--main-font);
     }
 
     .text-text-100,
     .whitespace-pre-wrap {
-        font-family: "New Tegomin", serif;
+        font-family: var(--main-font);
     }
 
-    /* 程式碼Mono */
+    /* 程式碼字型 */
     code {
-        font-family: "IBM Plex Mono", monospace !important;
+        font-family: var(--code-font) !important;
         font-weight: 400;
         font-style: normal;
     }
@@ -66,7 +89,7 @@
     }
 
     .hover\:\!bg-accent-main-000\/\[0\.08\]:hover {
-        background-color: #ffc0cb4f !important;
+        background-color: var(--pink-accent-hover) !important;
     }
 
     /* 去除左欄漸層黑塊 */
@@ -76,14 +99,14 @@
 
     /* 左側欄選定聊天之背景 */
     .\!bg-bg-400 {
-        background-color: #ffc0cb4f !important;
+        background-color: var(--pink-accent-hover) !important;
     }
 
     .hover\:bg-bg-400:hover {
-        background-color: #ffc0cb4f !important;
+        background-color: var(--pink-accent-hover) !important;
     }
 
-    /* 右下免責小字 */
+    /* 右下免責小字太擠 */
     .inline-block {
         margin-top: 10px;
     }
@@ -92,28 +115,30 @@
         --tw-gradient-stops: none;
     }
 
-    /* 展開整個聊天框，但是有bug */
-    /* .max-w-3xl {
-    max-width: 200ch;
-}
+    /* 展開整個聊天框 */
+    /*     .max-w-3xl {
+        max-width: 200ch;
+    }
+    .max-w-\[75ch\] {
+        max-width: 200ch;
+    } */
+    /* 修打字框到一半就換行的毛病 */
+    .max-w-\[60ch\] {
+        max-width: 100%;
+    }
 
-.max-w-\[75ch\] {
-    max-width: 200ch;
-} */
     .place-self-end {
         background-color: pink !important;
     }
 
-    /* 按鈕 */
+    /* 按鈕樣式 */
     .btn,
     button {
         background-color: rgba(255, 192, 203, 0) !important;
-        color: #ffc0cb !important;
-        /*     border: 1px solid rgba(255, 192, 203, 0.3) !important; */
+        color: var(--pink-accent) !important;
         border-radius: 8px !important;
         transition: all 0.3s ease !important;
         margin-left: 3px;
-        /*     margin-top: 3px; */
     }
 
     .btn:hover,
@@ -124,18 +149,6 @@
 
     .translate-y-4 {
         --tw-translate-y: 1.2rem;
-    }
-
-    :root {
-        /*   --background-color: #2e3440; */
-        --strong-color: #ebcb8b;
-        --em-color: #88c0d0;
-        --h1-color: #bf616a;
-        --h2-color: #a3be8c;
-        --h3-color: #b48ead;
-        --h4-color: #b48ead;
-        --h5-color: #8fbcbb;
-        --h6-color: #ebcb8b;
     }
 
     .bg-bg-300\/90 {
@@ -149,47 +162,61 @@
     hr,
     ul,
     table {
-        color: #c5b88f !important;
-        font-family: "New Tegomin", serif;
+        color: var(--list-color) !important;
+        font-family: var(--main-font);
     }
 
-    /* Specific colors for headings */
+    /* 文字強調樣式 */
+    strong {
+        color: var(--strong-color) !important;
+    }
+
+    em {
+        color: var(--em-color) !important;
+    }
+
+    /* 標題中的強調和斜體 */
+    h1 strong,
+    h1 em,
+    h2 strong,
+    h2 em,
+    h3 strong,
+    h3 em,
+    h4 strong,
+    h4 em,
+    h5 strong,
+    h5 em,
+    h6 strong,
+    h6 em,
+    em {
+        color: inherit !important;
+    }
+
+    /* 標題顏色 */
     h1 {
-        color: var(--h1-color,
-                /*[[h1-color]]*/
-            ) !important;
+        color: var(--h1-color) !important;
     }
 
     h2 {
-        color: var(--h2-color,
-                /*[[h2-color]]*/
-            ) !important;
+        color: var(--h2-color) !important;
     }
 
     h3 {
-        color: var(--h3-color,
-                /*[[h3-color]]*/
-            ) !important;
+        color: var(--h3-color) !important;
     }
 
     h4 {
-        color: var(--h4-color,
-                /*[[h4-color]]*/
-            ) !important;
+        color: var(--h4-color) !important;
     }
 
     h5 {
-        color: var(--h5-color,
-                /*[[h5-color]]*/
-            ) !important;
-        font-family: "New Tegomin", serif;
+        color: var(--h5-color) !important;
+        font-family: var(--main-font);
     }
 
     h6 {
-        color: var(--h6-color,
-                /*[[h6-color]]*/
-            ) !important;
-        font-family: "New Tegomin", serif;
+        color: var(--h6-color) !important;
+        font-family: var(--main-font);
     }
 
     /* 聊天框的頭貼 */
@@ -271,27 +298,28 @@
 
     /* 頂部區域裝飾, 別的頁面也會像鬼魂一樣跑出來 */
     /* header:before {
-    content: "🦄";
-    position: fixed;
-    top: 60px;
-    left: 35%;
-    font-size: 22px;
-    opacity: 0.5;
-    z-index: 1000;
-    animation: float 7s ease-in-out infinite 1.5s;
-}
+        content: "🦄";
+        position: fixed;
+        top: 60px;
+        left: 35%;
+        font-size: 22px;
+        opacity: 0.5;
+        z-index: 1000;
+        animation: float 7s ease-in-out infinite 1.5s;
+    }
 
-header:after {
-    content: "🍭";
-    position: fixed;
-    top: 300px;
-    left: 80%;
-    font-size: 35px;
-    opacity: 0.6;
-    z-index: 1000;
-    animation: float 4.5s ease-in-out infinite 2s;
-} */
-    /* 動畫 */
+    header:after {
+        content: "🍭";
+        position: fixed;
+        top: 300px;
+        left: 80%;
+        font-size: 35px;
+        opacity: 0.6;
+        z-index: 1000;
+        animation: float 4.5s ease-in-out infinite 2s;
+    } */
+
+    /* 動畫效果 */
     @keyframes float {
         0% {
             transform: translateY(0) translateX(0) rotate(0deg);
