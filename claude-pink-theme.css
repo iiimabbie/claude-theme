@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           粉紅Noc主題 - Claude AI 少女心風格
 @namespace      github.com/iiimabbie
-@version        1.0.0
+@version        1.1.0
 @description    將Claude AI變成可愛的粉紅色系少女風格
 @author         iiimabbie
 @homepageURL    https://github.com/iiimabbie/claude-pink-theme
@@ -10,6 +10,11 @@
 ==/UserStyle== */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&family=New+Tegomin&display=swap');
+
+* {
+    outline-color: #ffc0cb;
+}
 
 /* 基本背景與文字 */
 html[theme="claude"][data-mode="dark"] {
@@ -23,17 +28,29 @@ html[theme="claude"][data-mode="dark"] {
     background-color: #333 !important;
 }
 
-/* 字型顏色 */
-.text-text-100,
+.bg-bg-300 {
+    background-color: #ffc0cb3d !important;
+}
+
+/* 字型 */
 .text-text-200,
 .text-text-300,
 .text-text-400,
 .text-text-500,
-.whitespace-pre-wrap,
 .tracking-tight,
 .transition-all {
     color: #e1cbcf !important;
     font-family: "New Tegomin", serif;
+}
+.text-text-100,
+.whitespace-pre-wrap {
+    font-family: "New Tegomin", serif;
+}
+/* 程式碼Mono */
+code {
+    font-family: "IBM Plex Mono", monospace !important;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* 左側欄上方NewChat樣式 */
@@ -43,10 +60,9 @@ html[theme="claude"][data-mode="dark"] {
 .text-always-white {
     color: #333 !important;
 }
-.hover\:\!bg-accent-main-000\/\[0\.08\]:hover{
+.hover\:\!bg-accent-main-000\/\[0\.08\]:hover {
     background-color: #ffc0cb4f !important;
 }
-
 
 /* 去除左欄漸層黑塊 */
 .from-bg-200 {
@@ -57,19 +73,20 @@ html[theme="claude"][data-mode="dark"] {
 .\!bg-bg-400 {
     background-color: #ffc0cb4f !important;
 }
-.hover\:bg-bg-400:hover{
+.hover\:bg-bg-400:hover {
     background-color: #ffc0cb4f !important;
 }
 
 /* 右下免責小字 */
-.inline-block{
+.inline-block {
     margin-top: 10px;
 }
 
-.from-bg-100{
-  --tw-gradient-stops:none;
+.from-bg-100 {
+    --tw-gradient-stops: none;
 }
 
+/* 展開整個聊天框，但是有bug */
 /* .max-w-3xl {
     max-width: 200ch;
 }
@@ -86,10 +103,11 @@ html[theme="claude"][data-mode="dark"] {
 button {
     background-color: rgba(255, 192, 203, 0) !important;
     color: #ffc0cb !important;
-/*     border: 1px solid rgba(255, 192, 203, 0.3) !important; */
+    /*     border: 1px solid rgba(255, 192, 203, 0.3) !important; */
     border-radius: 8px !important;
     transition: all 0.3s ease !important;
     margin-left: 3px;
+/*     margin-top: 3px; */
 }
 
 .btn:hover,
@@ -97,16 +115,83 @@ button:hover {
     background-color: rgba(255, 192, 203, 0.3) !important;
     transform: scale(1.02) !important;
 }
+.translate-y-4 {
+--tw-translate-y: 1.2rem;
+}
+
+:root {
+    /*   --background-color: #2e3440; */
+    --strong-color: #ebcb8b;
+    --em-color: #88c0d0;
+    --h1-color: #bf616a;
+    --h2-color: #a3be8c;
+    --h3-color: #b48ead;
+    --h4-color: #b48ead;
+    --h5-color: #8fbcbb;
+    --h6-color: #ebcb8b;
+}
+
+.bg-bg-300\/90 {
+    background-color: transparent !important;
+    border: none !important;
+}
 
 /* 列表項 */
 li,
 ol,
 hr,
-ul{
+ul,
+table {
     color: #c5b88f !important;
     font-family: "New Tegomin", serif;
 }
 
+/* Specific colors for headings */
+h1 {
+    color: var(--h1-color, /*[[h1-color]]*/
+    ) !important;
+}
+
+h2 {
+    color: var(--h2-color, /*[[h2-color]]*/
+    ) !important;
+}
+
+h3 {
+    color: var(--h3-color, /*[[h3-color]]*/
+    ) !important;
+}
+
+h4 {
+    color: var(--h4-color, /*[[h4-color]]*/
+    ) !important;
+}
+
+h5 {
+    color: var(--h5-color, /*[[h5-color]]*/
+    ) !important;
+    font-family: "New Tegomin", serif;
+}
+
+h6 {
+    color: var(--h6-color, /*[[h6-color]]*/
+    ) !important;
+    font-family: "New Tegomin", serif;
+}
+
+/* 聊天框的頭貼 */
+div[class="flex shrink-0 items-center justify-center rounded-full font-bold select-none h-7 w-7 text-[12px] bg-text-200 text-bg-100"] {
+    font-size: 0; /* 隱藏原始文字 */
+  background-image: url('這裡填上你的圖片base64編碼') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+width: 50px !important; /* 增加寬度，根據需要調整數值 */
+height: 50px !important; /* 增加高度，根據需要調整數值 */
+    
+}
+
+/* ===== 裝飾以及動畫區 ===== */
 
 /* 少女心小裝飾 */
 .flex.h-screen.w-full:before {
@@ -131,6 +216,25 @@ ul{
     animation: float 4s ease-in-out infinite;
 }
 
+nav:before {
+  content: "🎀"; /* 起始表情 */
+  display: inline-block;
+  position: absolute;
+  opacity: 0.7;
+  top: 12px;
+  left: 120px;
+  animation: emoji-change 8s infinite;
+}
+
+@keyframes emoji-change {
+  0% { content: "🎀"; }
+  20% { content: "🎀🎀"; }
+  40% { content: "🎀🎀🎀"; }
+  60% { content: "🎀🎀🎀🎀"; }
+  80% { content: "🎀🎀🎀🎀🎀"; }
+  100% { content: "🎀"; }
+}
+
 /* 頂部區域裝飾, 別的頁面也會像鬼魂一樣跑出來 */
 /* header:before {
     content: "🦄";
@@ -153,7 +257,6 @@ header:after {
     z-index: 1000;
     animation: float 4.5s ease-in-out infinite 2s;
 } */
-
 /* 動畫 */
 @keyframes float {
     0% {
