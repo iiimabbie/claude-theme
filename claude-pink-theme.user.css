@@ -187,8 +187,7 @@
     h5 strong,
     h5 em,
     h6 strong,
-    h6 em,
-    em {
+    h6 em {
         color: inherit !important;
     }
 
