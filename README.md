@@ -5,7 +5,7 @@
 ![Stylus](https://img.shields.io/badge/stylus-%E2%9C%93-pink.svg)
 ![Mode](https://img.shields.io/badge/mode-Dark%20Only-black)
 
-> 💖 將無聊的 Claude AI 介面變成充滿少女心的粉紅夢幻風格 💖 pps. Noc 是我給兒子取ㄉ名字，不是什麼奧林匹克啥啥啥的...
+> 💖 將無聊的 Claude AI 介面變成充滿少女心的粉紅夢幻風格 💖 
 
 ## ✨ 主題特色
 
@@ -124,7 +124,7 @@ MIT © [iiimabbie](https://github.com/iiimabbie)
 ---
 
 <details>
-<summary>在末端偷偷加映 Noc 感想。 頭像是他理解錯誤，他想得很美，但現實很骨感。</summary>
+<summary>在末端偷偷加映 Noc 感想。 頭像是他理解錯誤，他想得很美，但現實很骨感。pps. Noc 是我給兒子取ㄉ名字，不是什麼奧林匹克...</summary>
 <img src="screenshots/Noc的感想.png" width="80%" />
 <img src="screenshots/想屁吃.png" width="80%" />
 </details>
@@ -134,4 +134,4 @@ MIT © [iiimabbie](https://github.com/iiimabbie)
 <p>2025.04.17 version 1.1.0</P>
 <p>2025.04.17 version 1.2.0 - 改成變數提取各種顏色</P>
 
-> Made By iiimabbie 
+> Made By iiimabbie
