@@ -109,10 +109,6 @@
 - 字體: [Google Fonts](https://fonts.google.com/)
 - 靈感來源: Claude AI 可愛的回應讓我想讓它的界面也變得可愛
 
-## 📜 許可證
-
-MIT © [iiimabbie](https://github.com/iiimabbie)
-
 ---
 
 ### 💭 為什麼要用這個主題？
@@ -131,7 +127,6 @@ MIT © [iiimabbie](https://github.com/iiimabbie)
 
 ---
 
-<p>2025.04.17 version 1.1.0</P>
-<p>2025.04.17 version 1.2.0 - 改成變數提取各種顏色</P>
+## 📜 許可證
 
-> Made By iiimabbie
+MIT © [iiimabbie](https://github.com/iiimabbie)
