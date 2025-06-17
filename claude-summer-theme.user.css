@@ -152,9 +152,9 @@
     } */
 
     /* 修打字框到一半就換行的毛病 */
-    .max-w-\[60ch\] {
+    /* .max-w-\[60ch\] {
         max-width: 100%;
-    }
+    } */
 
     .place-self-end {
         background-color: var(--accent-hover) !important;
