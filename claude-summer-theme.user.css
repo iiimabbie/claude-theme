@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Claude AI summer 風格
 @namespace      github.com/iiimabbie
-@version        1.0.0
+@version        1.1.0
 @description    將 Claude AI Web 變成 summer 風格
 @author         iiimabbie
 @homepageURL    https://github.com/iiimabbie/claude-theme
@@ -247,11 +247,17 @@
         font-family: var(--main-font);
     }
 
+    /* 把 flex-row 強制改成直向排列 + 置中 */
+    .flex.flex-row.gap-2 {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+
     /* 聊天框的頭貼 */
     div[class="flex shrink-0 items-center justify-center rounded-full font-bold select-none h-7 w-7 text-[12px] bg-text-200 text-bg-100"] {
+        /* 隱藏原始文字 */
         font-size: 0;
         /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-        /* 隱藏原始文字 */
         background-image: url('這裡填上你的圖片base64編碼') !important;
         background-size: cover;
         background-repeat: no-repeat;
