@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           宋體(僅字型)
 @namespace      github.com/iiimabbie
-@version        1.0
+@version        1.1
 @description    僅變更字型(自用)
 @author         iiimabbie
 @homepageURL    https://github.com/iiimabbie/claude-theme
@@ -27,6 +27,7 @@
     .tracking-tight,
     .transition-all,
     .font-claude-message,
+    .font-base, .font-base-bold,
     strong,
     em,
     p,
