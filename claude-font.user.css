@@ -1,0 +1,47 @@
+/* ==UserStyle==
+@name           宋體(僅字型)
+@namespace      github.com/iiimabbie
+@version        1.0
+@description    僅變更字型(自用)
+@author         iiimabbie
+@homepageURL    https://github.com/iiimabbie/claude-theme
+@supportURL     https://github.com/iiimabbie/claude-theme/issues
+@license        MIT
+==/UserStyle== */
+@import url('https://fontsapi.zeoseven.com/285/main/result.css'); /* 思源宋體 */
+
+
+@-moz-document domain("claude.ai") {
+
+    :root {
+        --main-font: "Noto Serif CJK", sans-serif;
+        --code-font: "Noto Sans Mono", monospace;
+    }
+
+    /* 字型設定 */
+    .text-text-100,
+    .text-text-200,
+    .text-text-300,
+    .text-text-400,
+    .text-text-500,
+    .tracking-tight,
+    .transition-all,
+    .font-claude-message,
+    strong,
+    em,
+    p,
+    ul {
+        font-family: var(--main-font);
+    }
+
+    /* 程式碼字型 */
+    code {
+        font-family: var(--code-font) !important;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* 單行code 字顏色 */
+    .text-danger-000 {
+        color: var(--code-color) !important;
+    }
