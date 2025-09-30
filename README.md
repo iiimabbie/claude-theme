@@ -56,6 +56,9 @@
    **夏日清新主題：**
    [![安裝夏日主題](https://img.shields.io/badge/%E5%AE%89%E8%A3%9D%E5%A4%8F%E6%97%A5%E4%B8%BB%E9%A1%8C-blue?style=for-the-badge)](https://github.com/iiimabbie/claude-theme/raw/main/claude-summer-theme.user.css)
 
+   **僅變更字型:**
+   [![安裝字型主題](https://img.shields.io/badge/%E5%AE%89%E8%A3%9D%E5%AD%97%E5%9E%8B%E4%B8%BB%E9%A1%8C-black?style=for-the-badge)](https://github.com/iiimabbie/claude-theme/raw/main/claude-font.user.css)
+
 *或者手動安裝：*
 
 1. 在 Stylus 中建立新樣式
